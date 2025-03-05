@@ -1,7 +1,7 @@
 const std = @import("std");
 const testing = std.testing;
-const Counter = @import("counter.zig").Counter;
-const Options = @import("options.zig").Options;
+const Counter = @import("counter").Counter;
+const Options = @import("options").Options;
 
 /// Format counts as a string according to the specified options
 pub fn formatCounts(counts: Counter, name: []const u8, options: Options, writer: anytype) !void {
